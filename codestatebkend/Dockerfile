@@ -4,7 +4,7 @@ VOLUME /tmp
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 # copy the source code
-COPY ./ ./
+COPY codestatebkend/ ./
 # invoke the maven build
 RUN ./mvnw
 # The application's jar file (when packaged)
