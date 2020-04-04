@@ -8,7 +8,7 @@ COPY codestatebkend/ ./
 # give permission to run maven
 RUN chmod +x ./mvnw
 # invoke the maven build
-RUN ./mvnw
+RUN ./mvnw package
 # The application's jar file (when packaged)
 ARG JAR_FILE=target/codestatebkend-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
