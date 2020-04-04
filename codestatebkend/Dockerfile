@@ -5,6 +5,8 @@ VOLUME /tmp
 EXPOSE 8080
 # copy the source code
 COPY codestatebkend/ ./
+# give permission to run maven
+RUN chmod +x ./mvnw
 # invoke the maven build
 RUN ./mvnw
 # The application's jar file (when packaged)
