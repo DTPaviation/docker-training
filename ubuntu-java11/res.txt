@@ -1,0 +1,8 @@
+Successfully built b3b8a790b9dd
+Successfully tagged tnexus/ubuntu-java11:latest
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
+CONTAINER ID        IMAGE                  COMMAND                  CREATED              STATUS                           PORTS               NAMES
+8fa051d18cae        tnexus/ubuntu-java11   "bash"                   About a minute ago   Exited (0) 52 seconds ago                            eloquent_shaw
+0d5469f153fe        336b7b8f54cc           "/bin/sh -c 'apt ins…"   27 minutes ago       Exited (1) 27 minutes ago                            cranky_chandrasekhar
+9f0082e56999        ubuntu                 "bash"                   About an hour ago    Exited (127) About an hour ago                       pensive_khorana
