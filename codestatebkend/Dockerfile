@@ -10,8 +10,8 @@ RUN chmod +x ./mvnw
 # invoke the maven build
 RUN ./mvnw clean package
 # The application's jar file (when packaged)
-ARG JAR_FILE=/codestatebkend/target/codestatebkend-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=codestatebkend/target/codestatebkend-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
-ADD ${JAR_FILE} codestatebkend.jar
+RUN cp ${JAR_FILE} codestatebkend.jar
 # Run the jar file 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/codestatebkend.jar"]
